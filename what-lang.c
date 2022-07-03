@@ -10,7 +10,7 @@ void main( int argc, char *argv[]) {
   while (fgets(line, sizeof line, fp)) {
     if (strstr(line, "tell:")) {
       fgets(line, sizeof line, fp);
-      fputs(line, stdout);
+     fputs(line, stdout);
     }
 
     
