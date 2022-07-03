@@ -11,6 +11,7 @@ void main( int argc, char *argv[]) {
       fgets(line, sizeof line, fp);
      fputs(line, stdout);
     }
+   
 
 
   }
