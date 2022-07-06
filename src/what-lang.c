@@ -14,7 +14,7 @@ if (strcmp(argv[1], "--update") == 0) {
 
   char line[BUFSIZ];
   while (fgets(line, sizeof line, f2)) {
-  if (strstr(line, "2.0.0")) {
+  if (strstr(line, "2.1.0")) {
 printf("You are in correct version !\n");
 
   }
@@ -25,6 +25,7 @@ system("start https://github.com/what-language/interpreter/releases");
 }
   }
 }
+
 
 
 
@@ -45,6 +46,11 @@ system("start https://github.com/what-language/interpreter/releases");
          
 system(line);
 }
+   if (strstr(line, "inter.wait-")) {
+        fgets(line, sizeof(line), fp);
+system("pause");
+}
+
 
 
    
