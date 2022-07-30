@@ -14,7 +14,7 @@ if (strcmp(argv[1], "--update") == 0) {
 
   char line[BUFSIZ];
   while (fgets(line, sizeof line, f2)) {
-  if (strstr(line, "2.1.1")) {
+  if (strstr(line, "3.0.0")) {
 printf("You are in correct version !\n");
 
   }
@@ -51,15 +51,7 @@ system(line);
 system("pause");
 }
 
-   if (strstr(line, "inter.gen.console.apr-")) {
-        fgets(line, sizeof(line), fp);
-system(line);
-}
 
-if (strstr(line, "inter.gen.console.tbrc-")) {
-        fgets(line, sizeof(line), fp);
-system(line);
-}
 
 
 
