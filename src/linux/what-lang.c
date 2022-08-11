@@ -22,5 +22,10 @@ void main(int argc, char **argv) {
       fgets(line, sizeof(line), fp);
       system("read NOTHING");
     }
+    
+   if (strstr(line, "inter.gen.exit-")) {
+        fgets(line, sizeof(line), fp);
+exit(0);
+}
   }
 }
