@@ -4,6 +4,7 @@
 #include <string.h>
 
 void main(int argc, char **argv) {
+
 if (strcmp(argv[1], "--version") == 0){
   printf("4.0.0, to make sure that your what-language interpreter is in the latest version run wli with the --update on windows");
 } 
