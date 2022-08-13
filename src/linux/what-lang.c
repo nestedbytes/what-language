@@ -27,5 +27,7 @@ void main(int argc, char **argv) {
         fgets(line, sizeof(line), fp);
 exit(0);
 }
+
+
   }
 }
