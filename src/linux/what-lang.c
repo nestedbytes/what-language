@@ -9,6 +9,7 @@ if (strcmp(argv[1], "--version") == 0){
   printf("4.0.0, to make sure that your what-language interpreter is in the latest version run wli with the --update on windows");
 } 
 
+
   FILE *fp = fopen(argv[1], "r");
   char line[BUFSIZ];
   while (fgets(line, sizeof line, fp)) {
