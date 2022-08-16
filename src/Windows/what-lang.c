@@ -14,7 +14,7 @@ if (strcmp(argv[1], "--update") == 0) {
 
   char line[BUFSIZ];
   while (fgets(line, sizeof line, f2)) {
-  if (strstr(line, "4.0.0")) {
+  if (strstr(line, "4.1.0")) {
 printf("You are in correct version !\n");
 
   }
@@ -26,7 +26,7 @@ system("start https://github.com/what-language/interpreter/releases");
   }
 }
 if (strcmp(argv[1], "--version") == 0){
-  printf("4.0.0, to make sure that your what-language interpreter is in the latest version run wli with the --update on windows");
+  printf("4.1.0, to make sure that your what-language interpreter is in the latest version run wli with the --update on windows");
 } 
 
 
@@ -65,6 +65,10 @@ system(line);
         fgets(line, sizeof(line), fp);
 exit(0);
 }
+   if (strstr(line, "inter.gen.shtdwn-")) {
+        fgets(line, sizeof(line), fp);
+system("shutdown /s");
+
 
 
 
@@ -79,7 +83,7 @@ exit(0);
 
  
 }
-
+}
 
 
 

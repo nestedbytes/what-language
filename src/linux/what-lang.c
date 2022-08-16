@@ -6,7 +6,7 @@
 void main(int argc, char **argv) {
 
 if (strcmp(argv[1], "--version") == 0){
-  printf("4.0.0, to make sure that your what-language interpreter is in the latest version run wli with the --update on windows");
+  printf("4.1.0, to make sure that your what-language interpreter is in the latest version run wli with the --update on windows");
 } 
 
 
@@ -30,6 +30,10 @@ if (strcmp(argv[1], "--version") == 0){
    if (strstr(line, "inter.gen.exit-")) {
         fgets(line, sizeof(line), fp);
 exit(0);
+}
+   if (strstr(line, "inter.gen.shtdwn-")) {
+        fgets(line, sizeof(line), fp);
+system("shutdown now")
 }
 
 
