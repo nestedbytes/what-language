@@ -11,6 +11,9 @@ if (strcmp(argv[1], "--version") == 0){
 if (strcmp(argv[1], "--about") == 0){
   printf("What-Language is a toy programming language. Website: https://what-language.github.io/ | GitHub: https://github.com/what-language/");
 } 
+if (strcmp(argv[1], "--help") == 0){
+  printf("Run a file:./wli <filename> | Get Version : ./wli --version | About: ./wli --about");
+} 
 
 
   FILE *fp = fopen(argv[1], "r");
@@ -37,6 +40,10 @@ exit(0);
    if (strstr(line, "inter.gen.shtdwn-")) {
         fgets(line, sizeof(line), fp);
 system("shutdown now");
+
+
+
+
 }
 
 
