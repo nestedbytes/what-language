@@ -32,7 +32,9 @@ if (strcmp(argv[1], "--version") == 0){
 if (strcmp(argv[1], "--about") == 0){
   printf("What-Language is a toy programming language. Website: https://what-language.github.io/ | GitHub: https://github.com/what-language/");
 } 
-
+if (strcmp(argv[1], "--help") == 0){
+  printf("Run a file:./wli.exe <filename> | Get Version : ./wli.exe --version | About: ./wli.exe --about | Check for updates: ./wli.exe --update");
+} 
 
 
 
