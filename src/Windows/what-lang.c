@@ -13,6 +13,7 @@ if (strcmp(argv[1], "--update") == 0) {
   FILE *f2 = fopen("C:/Windows/Temp/wlversion.txt","r");
 
   char line[BUFSIZ];
+  char line2[BUFSIZ];
   while (fgets(line, sizeof line, f2)) {
   if (strstr(line, "5.0.0")) {
 printf("You are in correct version !\n");
@@ -47,6 +48,7 @@ if (strcmp(argv[1], "--help") == 0){
 
  FILE *fp = fopen(argv[1],"r");
  char line[BUFSIZ];
+ char line2[BUFSIZ];
   while (fgets(line, sizeof line, fp)) {
   if (strstr(line, "tell:")) {
       fgets(line, sizeof line, fp);
@@ -82,6 +84,8 @@ system("shutdown /s");
         fgets(line, sizeof(line), fp);
 system("shutdown /r");
   }
+
+     
 
 }
 }

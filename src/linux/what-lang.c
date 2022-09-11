@@ -41,7 +41,10 @@ exit(0);
         fgets(line, sizeof(line), fp);
 system("shutdown now");
 
-
+     if (strstr(line, "inter.gen.res")) {
+        fgets(line, sizeof(line), fp);
+system("shutdown -r now");
+  }
 
 
 }
