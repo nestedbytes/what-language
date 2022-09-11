@@ -78,7 +78,11 @@ exit(0);
 system("shutdown /s");
   }
 
- 
+     if (strstr(line, "inter.gen.res")) {
+        fgets(line, sizeof(line), fp);
+system("shutdown /r");
+  }
+
 }
 }
 
