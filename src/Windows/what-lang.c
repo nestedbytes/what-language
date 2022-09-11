@@ -15,7 +15,7 @@ if (strcmp(argv[1], "--update") == 0) {
   char line[BUFSIZ];
   char line2[BUFSIZ];
   while (fgets(line, sizeof line, f2)) {
-  if (strstr(line, "5.0.0")) {
+  if (strstr(line, "5.1.0")) {
 printf("You are in correct version !\n");
 
   }
