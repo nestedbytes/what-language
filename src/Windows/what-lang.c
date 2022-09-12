@@ -37,6 +37,10 @@ if (strcmp(argv[1], "--help") == 0){
   printf("Run a file:./wli.exe <filename> | Get Version : ./wli.exe --version | About: ./wli.exe --about | Check for updates: ./wli.exe --update");
 } 
 
+if (strcmp(argv[1], "--credits") == 0){
+  printf("Designed and made and maintained by Shourjjo Majumder (shourgamer2.tk). The website and the docs are made by Kendall Pinto (kendalldoescoding.gq) ");
+} 
+
 
 
 
