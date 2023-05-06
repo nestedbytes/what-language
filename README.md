@@ -1,2 +1,2 @@
-# interpreter
-The what language interpreter 
+### What-Language
+A toy programming language
